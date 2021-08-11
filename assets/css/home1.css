@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --blood-red:#e50914;
+    --white:#ffffff;
+    --black:#000000;
+    --border-color:#222;
+}
+
+*{
+    outline: none;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:focus{
+    outline: none;
+}
+
+.top-screen{
+    height: 695px;
+    width: 100%;
+}
+
+.top-screen-background{
+    background-image: url("../img/background-img.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.top-screen-background-cover{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.flex{
+    display: flex;
+}
+
+.header-styler{
+    justify-content: space-between;
+    padding: 25px 0;
+    
+}
+
+.section-wrapper{
+    max-width: 1500px !important;
+    margin: auto;
+    padding:0 50px;
+}
+
+.logo-container svg{
+    width: 135px;
+    height: 35px;
+}
+
+.top-right-control{
+    margin-left:35px;
+}
+
+.lang-select{
+    color: white;
+}
+
+
+.lang-select-field{
+    border: 1px solid silver;
+    -webkit-appearance: none;
+    background-color: rgba(0,0,0,0.5);
+    color: var(--white);
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 3px;
+}
+
+.lang-select-field:focus-within{
+    border: 1px solid var(--white);
+}
+
+
+
+.lang-select-field option{
+    background-color: rgb(163, 163, 163);
+    border: 1px solid rgb(163, 163, 163);
+    border: none;
+    font-size: 16px;
+
+}
+
+.signin-button{
+    padding: 9px 15px;
+    background-color: var(--blood-red);
+    border: none;
+    border-radius: 5px;
+}
+
+.signin-button a{
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+@media screen and (min-width:421px) and (max-width:767px) {
+    .logo-container svg{
+        width: 110px;
+        height: 30px;
+    }
+
+    .section-wrapper{
+        padding: 0 20px;
+    }
+
+    .signin-button a{
+        font-size: 16px;
+    }
+
+    .top-right-control{
+        margin-left:25px;
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:420px) {
+    .logo-container svg{
+        width: 90px;
+        height: 30px;
+    }
+
+    .section-wrapper{
+        padding: 0 20px;
+    }
+
+    .signin-button{
+        padding: 7px 10px;
+    }
+
+    .lang-select-field{
+        padding: 6px 15px;
+    }
+
+    .signin-button a{
+        font-size: 14px;
+    }
+
+    .top-right-control{
+        margin-left:10px;
+    }
+}
+
+@media screen and (max-width:319px) {
+    .flex{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
