@@ -1,1 +1,278 @@
-.
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --blood-red:#e50914;
+    --white:#ffffff;
+    --black:#000000;
+    --border-color:#222;
+}
+
+*{
+    outline: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.body-bg{
+    /* background-color: var(--black); */
+    background-image: url('../img/background-img.jpg');
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+}
+
+a{
+    text-decoration: none;
+}
+
+.section-wrapper{
+    max-width: 1500px;
+    margin: auto;
+    padding:0 50px;
+}
+
+.dark-overlay{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.header-container{
+    display: flex;
+    padding: 25px 0;
+}
+
+.svg-container svg{
+    width: 180px;
+    cursor: pointer;
+}
+
+
+/* Sign in Box */
+
+.signin-box-wrapper{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.heading{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.signin-box{
+    background-color: rgba(0,0,0,0.7); 
+    padding: 60px 70px;
+    width: 330px;
+}
+
+.form-container{
+    margin-top: 30px;
+    position: relative;
+}
+
+.form-control input{
+    width: 100%;
+    border-radius: 5px;
+    background-color: rgb(51 51 51);
+    border: none;
+    border-bottom:2px solid transparent; 
+    margin: 0;
+    padding: 25px 10px 5px; 
+    color:var(--white);
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.form-control button{
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: var(--blood-red);
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-top: 25px;
+}
+
+.email-input-label{
+    position: absolute;
+    color: gray;
+    top: 15px;
+    left:10px ;
+    font-size: 20px;
+}
+
+.password-input-label{
+    position: absolute;
+    color: gray;
+    top: 90px;
+    left:10px ;
+    font-size: 20px;
+}
+
+.form-control input:focus{
+    border-bottom: 2px solid orange;
+}
+
+.form-control input:focus ~ .email-input-label,
+.form-control input:valid ~ .email-input-label{
+    top: 5px;
+    font-size: 12px;
+}   
+
+.form-control input:focus ~ .password-input-label,
+.form-control input:valid ~ .password-input-label{
+    top: 80px;
+    font-size: 12px;
+}  
+
+.additional-controls{
+    display: flex;
+    font-size: 14px;
+    color: gray;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.additional-controls input[type="checkbox"]{
+    background-color: gray;
+    padding: 0;
+    margin: 0;
+}
+
+.additional-controls input[type="checkbox"]:checked{
+    background-color: gray;
+}
+
+.login-facebook{
+    color: gray;
+    margin-top: 20px;
+}
+
+.facebook-text{
+    font-size: 14px;
+    padding-left: 5px;
+    margin-top: -5px;
+}
+
+.fa-facebook-f{
+    color: white;
+    background-color:#4267B2;
+    font-size: 20px;
+    padding: 5px 2px 0 8px;
+}
+
+.new-user{
+    margin-top: 15px;
+}
+
+.gray-color-text{
+    color: gray;
+}
+
+.white-color-text{
+    color: white;
+}
+
+.page-policy{
+    margin-top: 15px;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+.page-policy a{
+    color: #0071eb;
+}
+
+.page-policy a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    padding: 10px 160px;
+    background-color: rgba(0,0,0,0.8);
+    margin-top:100px;
+}
+
+.question-on-call{
+    margin-top: 20px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.footer-link-items{
+    margin: 5px 0;
+    width: 250px; 
+}
+
+.footer-link-items a{
+    color: gray;
+}
+
+.lang-selector-wrapper{
+    margin: 30px 0 30px 0;
+}
+
+.lang-selector select{
+    padding: 15px 25px 15px 25px;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    border: 1px solid rgba(192, 192, 192, 0.726);
+    border-radius: 3px;
+    font-size: 16px;
+    color: gray;
+}
+
+.lang-selector select:focus{
+    border: 1px solid var(--white);
+}
+
+@media screen and (max-width:500px){
+    .signin-box{
+        width: 100%;
+        padding: 0;
+    }
+
+    .signin-box-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-wrapper{
+        padding: 0;
+    }
+    .dark-overlay{
+        background-color: rgba(0,0,0,1);
+    }
+
+    .svg-container svg{
+        width: 130px;
+        padding:0 10px;
+    }
+
+    .footer{
+        padding: 10px;
+        background-color: rgba(0,0,0,0.8);
+        margin-top:60px;
+        border-top: 1px solid silver;
+    }
+
+    .footer-link-items{
+        margin: 5px 0;
+        width: 170px; 
+    }
+}
