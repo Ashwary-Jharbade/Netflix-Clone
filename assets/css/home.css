@@ -72,7 +72,7 @@ a{
 
 .lang-selector select{
     -webkit-appearance: none;
-    padding: 10px 20px;
+    padding: 12px 20px;
     background-color: transparent;
     color: white;
     border: none;
