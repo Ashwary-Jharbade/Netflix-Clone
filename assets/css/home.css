@@ -382,10 +382,13 @@ a{
 
 /* fancy section */
 
+.fancy-border{
+    border-bottom: 10px solid #222;
+}
+
 .fancy-section{
     display: flex;
     background-color: black;
-    border-bottom: 10px solid #222;
     font-family: 'Roboto',sans-serif;
 }
 
