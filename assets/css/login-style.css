@@ -17,7 +17,7 @@ body{
 }
 
 .body-bg{
-    /* background-color: var(--black); */
+    background-color: var(--black);
     background-image: url('../img/background-img.jpg');
     background-size: cover;
     font-family: 'Roboto', sans-serif;
@@ -46,7 +46,7 @@ a{
 }
 
 .svg-container svg{
-    width: 180px;
+    width: 150px;
     cursor: pointer;
 }
 
@@ -216,12 +216,18 @@ a{
 
 .footer-link-items{
     margin: 5px 0;
-    width: 250px; 
+    width: 230px; 
 }
 
 .footer-link-items a{
     color: gray;
+    font-size: 15px;
 }
+
+.footer-link-items a:hover{
+    text-decoration: underline;
+}
+
 
 .lang-selector-wrapper{
     margin: 30px 0 30px 0;
@@ -275,4 +281,11 @@ a{
         margin: 5px 0;
         width: 170px; 
     }
+}
+
+@media screen and (max-width:320px){
+    .footer-link-items{
+        margin: 5px 0;
+        width: 150px; 
+    } 
 }

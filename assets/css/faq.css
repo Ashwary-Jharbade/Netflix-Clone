@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --blood-red:#e50914;
+    --white:#ffffff;
+    --black:#000000;
+    --border-color:#222;
+}
+
+*{
+    outline: none;
+}
+
+body{
+    background-color: var(--black);
+}
+
+a{
+    text-decoration: none;
+}
+
+.section-wrapper{
+    max-width: 1500px;
+    margin: auto;
+    padding:0 50px;
+}
+
+/* faq styles */
+
+.faq-section-border{
+    border-bottom: 10px solid #222;
+    padding-bottom: 60px;
+}
+
+.faq-section-wrapper{
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+}
+
+.accordian-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.faq-heading{
+    margin-top: 25px;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    padding: 40px;
+}
+
+.accordian-container{
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    width: 800px;
+}
+
+.color-code{
+    background-color: #303030;
+    padding: 20px;
+}
+
+.accordian-head{
+    display: flex;
+    font-size: 30px;
+    font-weight: 400;
+    justify-content: space-between;
+    margin-bottom: 1px;
+    cursor: pointer;
+    background-color: #303030;
+}
+
+.accordian-head button{
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    background-color: #303030;
+    border: none;
+    color:var(--white);
+}
+
+.accordin-icon-container{
+    display: flex;
+    justify-content: center;
+}
+
+.accordian-icon{
+    align-self: center;
+    padding: 0 30px;
+}
+
+.accordian-body{
+    visibility: collapse;
+    display: none;
+    font-size: 25px;
+}
+
+.accordian-content{
+    padding: 10px 0;
+}
+
+.accordian-head:focus-within ~ .accordian-body{
+    visibility: visible;
+    display: block;
+}
+
+
+@media screen and (max-width:1024px){
+    .faq-heading{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .faq-heading{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .faq-heading{
+        font-size: 30px;
+    }
+
+    .accordian-head{
+        font-size: 20px;
+    }
+
+    .section-wrapper{
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .faq-heading{
+        font-size: 18px;
+    }
+
+    .accordian-head{
+        font-size: 18px;
+    }
+}
+
+
+
+/* membership form */
+
+.faq-membership-container{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 20px 0;
+}
+
+.faq-membership-heading{
+    color: var(--white);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.faq-form-control{
+    display: flex;
+    justify-content: center;
+}
+
+.faq-membership-input{
+    position: relative;
+}
+
+.faq-label{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    font-weight: 500;
+    color: gray;
+}
+
+.faq-membership-input input{
+    padding: 17px;
+    border: none;
+    font-size: 18px;
+    width: 400px;
+}
+
+.faq-membership-input input:valid ~ .faq-label,
+.faq-membership-input input:focus ~ .faq-label{
+    top: 2px;
+}
+
+.faq-membership-button button{
+    padding: 15px;
+    border: none;
+    background-color: var(--blood-red);
+    color: var(--white);
+    font-size: 22px;
+    width: 200px;
+}
+
+@media screen and (max-width:768px) {
+    .faq-form-control{
+        flex-direction: column;
+    }
+
+    .faq-membership-input{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    .faq-membership-input input{
+        width: 100%;
+    }
+
+    .faq-membership-button{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+    }
+    
+}

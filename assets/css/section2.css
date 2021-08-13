@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.fancy-section{
+    display: flex;
+    background-color: black;
+    border-bottom: 10px solid #222;
+    font-family: 'Roboto',sans-serif;
+}
+
+.fancy-reverse{
+    flex-direction: row-reverse;
+}
+
+.section-content{
+    width: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.section-text-content{
+    align-self: center;
+}
+
+.text-heading{
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 0 50px;
+}
+
+.text-sub-heading{
+    font-size: 20px;
+    padding: 0 50px;    
+}
+
+.section-img-wrapper{
+    width: 50%;
+}
+
+.section-img-wrapper{
+    display: flex;justify-content: center;
+    margin: 50px 0;
+}
+
+.section-img-content{
+    position: relative;
+}
+
+.media-container{
+    width: 400px;
+    height: 300px;
+    background-color: black;
+    position: relative;
+}
+
+.video-container{
+    padding: 15.5% 14% 0% 13%;
+}
+
+.device-pile{
+    padding: 7% 18% 15% 18%;
+}
+
+.video-container video{
+    width: 100%;
+    height: 100%;
+}
+
+.img-container img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+
+@media screen and (max-width:1024px) {
+    
+    
+}
+
+@media screen and (max-width:768px) {
+    .fancy-section{
+        flex-direction: column;
+    }
+
+    .section-content{
+        width: 100%;
+    }
+
+    .section-img-wrapper{
+        width: 100%;
+    }
+
+    .section-text-content{
+        width: 100%;
+    }
+    
+
+    .media-container{
+        width: 100%;
+        height: 100%px;
+        background-color: black;
+        position: relative;
+    }
+
+    .text-heading{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 20px;
+        padding: 0 20px;
+    }
+    
+    .text-sub-heading{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 10px;
+        padding: 0 20px;
+    }
+    
+}
+
+@media screen and (max-width:420px) {
+    .text-heading{
+        text-align: center;
+        font-size: 32px;
+        padding: 0 10px;
+    }
+    
+    .text-sub-heading{
+        text-align: center;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    
+    .section-img-wrapper{
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .text-heading{
+        text-align: center;
+        font-size: 28px;
+    }
+    
+    .text-sub-heading{
+        text-align: center;
+        font-size: 12px;
+    }
+
+}
