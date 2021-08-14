@@ -11,6 +11,31 @@
     outline: none;
 }
 
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
 body{
     background-color: var(--black);
 }
@@ -64,6 +89,7 @@ a{
     border: 1px solid silver;
     color:var(--white);
     padding: 0;
+    position: relative;
 }
 
 .lang-selector:focus-within{
@@ -72,7 +98,7 @@ a{
 
 .lang-selector select{
     -webkit-appearance: none;
-    padding: 12px 20px;
+    padding: 12px 25px;
     background-color: transparent;
     color: white;
     border: none;
@@ -84,6 +110,14 @@ a{
 .lang-selector select option{
     color: white;
     background-color: #222;
+}
+
+.language-icon{
+    position:absolute;top:10px;
+}
+
+.arrow-icon{
+    position:absolute;top:10px;right:0;
 }
 
 .signin-button{
@@ -272,7 +306,7 @@ a{
     }
 
     .lang-selector select{
-        padding: 7px 20px;
+        padding: 7px 25px;
     }
     
     .signin-button{
@@ -299,6 +333,16 @@ a{
         margin-top: 20px;
         font-weight: 400;
     }
+
+    .language-icon{
+        position:absolute;top:5px;
+        font-size: 0;
+    }
+    
+    .arrow-icon{
+        position:absolute;top:5px;right:0;
+    }
+    
     
 }
 
@@ -316,11 +360,11 @@ a{
     }
 
     .lang-selector select{
-        padding: 7px 20px;
+        padding: 7px 23px;
     }
     
     .signin-button{
-        padding:7px 10px;
+        padding:7px 8px;
     }
 
     .control-space{
@@ -354,6 +398,10 @@ a{
     .header-container{
         flex-direction: column;
         align-items: center;
+    }
+
+    .lang-selector select{
+        padding: 7px 25px;
     }
 
     .top-controls{
@@ -784,7 +832,8 @@ a{
 }
 
 .footer .lang-selector-footer select{
-    padding: 15px 25px 15px 25px;
+    -webkit-appearance: none;
+    padding: 15px 30px;
     background-color: rgba(0,0,0,0.8);
     color: white;
     border: 1px solid rgba(192, 192, 192, 0.726);
@@ -803,6 +852,23 @@ a{
     margin-bottom: 25px;
 }
 
+.lang-selector-footer{
+    position: relative;
+}
+
+.footer-language-icon{
+    color: gray;
+    position: absolute;
+    top: 12px;
+    left: 5px;
+}
+
+.footer-arrow-icon{
+    color: gray;
+    position: absolute;
+    top: 12px;
+    left: 85px;
+}
 
 @media screen and (max-width:500px){
     .footer{

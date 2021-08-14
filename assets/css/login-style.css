@@ -11,6 +11,31 @@
     outline: none;
 }
 
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
 body{
     padding: 0;
     margin: 0;
@@ -234,7 +259,8 @@ a{
 }
 
 .lang-selector select{
-    padding: 15px 25px 15px 25px;
+    -webkit-appearance: none;
+    padding: 15px 30px;
     background-color: rgba(0,0,0,0.8);
     color: white;
     border: 1px solid rgba(192, 192, 192, 0.726);
@@ -245,6 +271,24 @@ a{
 
 .lang-selector select:focus{
     border: 1px solid var(--white);
+}
+
+.lang-selector{
+    position: relative;
+}
+
+.footer-language-icon{
+    color: gray;
+    position: absolute;
+    top: 12px;
+    left: 5px;
+}
+
+.footer-arrow-icon{
+    color: gray;
+    position: absolute;
+    top: 12px;
+    left: 85px;
 }
 
 @media screen and (max-width:500px){
