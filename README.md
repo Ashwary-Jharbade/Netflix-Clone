@@ -10,6 +10,11 @@ Cloning Netflix website home and sign in page
 - Contact
 - Acknowledgement
 
+### About the project
+The project is an attempt to clone the existing (Aug 2021) Netflix website. The project is being created while learning and implementing the insdusty standards. 
+
+### 
+
 ### Github page link:
 ```
 https://ashwary-jharbade.github.io/Netflix-Clone/
