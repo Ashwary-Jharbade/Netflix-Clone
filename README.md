@@ -7,6 +7,8 @@ Cloning Netflix website home and sign in page - [Netflix page demo](https://ashw
 - Getting started
   - Prequisites
 - Road map
+- Project breakdown
+- Project Sanpshot
 - Contact
 - Acknowledgement
 
@@ -56,10 +58,11 @@ The project is an attempt to clone the existing (Aug 2021) Netflix website. And 
 https://www.evernote.com/shard/s746/sh/12a96790-7808-a015-6530-2ac8d8cb1d3e/08a1927a70bccc3aeb2260e65e5a4e34
 
 ```
-#### Github page 
-```
-https://ashwary-jharbade.github.io/Netflix-Clone/
-```
+### Project Snapshots
+
+![Screenshot (1186)](https://user-images.githubusercontent.com/55127977/130098386-286facb3-8729-41f8-baae-1368fc391015.png)
+
+![Screenshot (1185)](https://user-images.githubusercontent.com/55127977/130098331-4d05e953-12fe-476d-96c8-4a3c4b1e1847.png)
 
 ### Contact
 
@@ -71,6 +74,8 @@ https://www.linkedin.com/in/ashwary-jharbade/
 - Git
 - Github
 - Github pages
+- Draw.io
+- Evernote
 - VS Code Studio
 - Font Awesome
 - Google font API
