@@ -1,5 +1,14 @@
 ### Netflix-Clone
-Trying to clone netflix website
+Cloning Netflix website home and sign in page
+
+### Tabel of Contents -
+- About the project
+  - Built with
+- Getting started
+  - Prequisites
+- Road map
+- Contact
+- Acknowledgement
 
 ### Github page link:
 ```
