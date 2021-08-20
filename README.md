@@ -1,5 +1,7 @@
 ### Netflix-Clone
-Cloning Netflix website home and sign in page - [Netflix page demo](https://ashwary-jharbade.github.io/Netflix-Clone/)
+Cloning Netflix website home and sign in page
+
+### [Netflix page demo](https://ashwary-jharbade.github.io/Netflix-Clone/)
 
 ### Project Snapshots
 
