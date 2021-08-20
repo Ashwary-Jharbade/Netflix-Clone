@@ -469,7 +469,59 @@ a{
 
 .section-img-wrapper{
     width: 50%;
+    position: relative;
 }
+
+/* Card */
+
+.flex{
+    display: flex;
+}
+
+.st-container{
+    position: absolute;
+    top: 200px;
+    height: 60px;
+    background-color: black;
+    width: 300px;
+    display: flex;
+    color: white;
+    border-radius: 10px;
+    padding:  10px 0;
+    border:2px solid rgba(255,255,255,0.5);
+    justify-content: space-around;
+}
+
+.st-img-container .img-block{
+    height: 100%
+}
+
+.st-img-container img{
+    height: inherit;
+    margin-right: 10px;
+}
+
+.st-section-heading{
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.st-section-text{
+    font-weight: 400;
+    color: skyblue;
+    font-family: 'Roboto', sans-serif;
+}
+
+.valign{
+    align-self: center;
+}
+
+.st-gif-container img{
+    height: 50px;
+}
+
+/* End card */
 
 .section-img-wrapper{
     display: flex;justify-content: center;
@@ -504,12 +556,6 @@ a{
     width: 100%;
     position: absolute;
     top: 0;
-}
-
-
-@media screen and (max-width:1024px) {
-    
-    
 }
 
 @media screen and (max-width:768px) {
@@ -668,6 +714,9 @@ a{
     display: block;
 }
 
+.accordian-head button:focus-within ~ .accordin-icon-container .accordian-icon{
+    transform: rotate(45deg);
+}
 
 @media screen and (max-width:1024px){
     .faq-heading{
@@ -868,6 +917,20 @@ a{
     position: absolute;
     top: 12px;
     left: 85px;
+}
+
+@media screen and (max-width:768px) {
+    .img-container img{
+        top: -10px;
+    }
+
+    .video-container{
+        padding-top:13%;
+    }
+
+    .section-text-content{
+        margin: 10px 0;
+    }
 }
 
 @media screen and (max-width:500px){
