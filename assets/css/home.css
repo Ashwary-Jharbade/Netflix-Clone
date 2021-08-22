@@ -1,5 +1,7 @@
+/* Importing Roboto fonts with weights 300,400,500,700 and 900 using Google font api   */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+/* Defining glabal color variables */
 :root{
     --blood-red:#e50914;
     --white:#ffffff;
@@ -7,10 +9,12 @@
     --border-color:#222;
 }
 
+/* Setting all elements outline property to none */
 *{
     outline: none;
 }
 
+/* Material icons style */
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -36,20 +40,26 @@
     font-feature-settings: 'liga';
 }
 
+/* Setting background color for body */
 body{
     background-color: var(--black);
 }
 
+/* Setting anchor tag text decoration property to none */
 a{
     text-decoration: none;
 }
 
+/* Defining max width for the elements and setting some distance from the screen bezels  */
 .section-wrapper{
     max-width: 1500px;
     margin: auto;
     padding:0 50px;
 }
 
+/* Top section styling start */
+
+/* Styling for lading page top section */
 .top-screen-section{
     background: linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.05)), url('../img/background-img.jpg');
     background-repeat: no-repeat;
@@ -57,32 +67,36 @@ a{
     background-position: center;
 }
 
-
-
+/* Section bottom border style */
 .section-border{
     border-bottom: 10px solid var(--border-color);
 }
 
+/* Setting top section dark overlay and applying bottom border to the section */
 .dark-overlay{
     background-color: rgba(0,0,0,0.5);
     height: 695px;
     border-bottom: 10px solid var(--border-color);
 }
 
+/* Page header container styling */
 .header-container{
     display: flex;
     padding: 25px 0;
 }
 
+/* Setting width for logo */
 .svg-container svg{
     width: 150px;
 }
 
+/* Top right hand side controls container styling */
 .top-controls{
     display: flex;
     margin-left: auto;
 }
 
+/* Style for language selector container */
 .lang-selector{
     background-color: rgba(0,0,0,0.5);
     border-radius: 5px;
@@ -92,10 +106,12 @@ a{
     position: relative;
 }
 
+/* On focus state style on language selector */
 .lang-selector:focus-within{
     border: 1px solid var(--white);
 }
 
+/* Language selector select field styling */
 .lang-selector select{
     -webkit-appearance: none;
     padding: 12px 25px;
@@ -107,25 +123,30 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Language selectos select field options style */
 .lang-selector select option{
     color: white;
     background-color: #222;
 }
 
+/* Positioning language selector icons */
 .language-icon{
     position:absolute;top:9px;
 }
 
+/* language selector arrow icon style */
 .arrow-icon{
     position:absolute;top:10px;right:0;
 }
 
+/* Top right sign in button styles */
 .signin-button{
     padding: 15px 20px;
     background-color: var(--blood-red);
     border-radius: 5px;
 }
 
+/* Sign in button link styling */
 .signin-button a{
     color: var(--white);
     font-size: 16px;
@@ -133,22 +154,26 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Applying margin left to top right controls */
 .control-space{
     margin-left:30px
 }
 
+/* Top section heading */
 .top-section-text{
     color: var(--white);
     margin-top: 150px;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Large heading styles */
 .heading-one{
     font-size: 50px;
     font-weight: 700;
     text-align: center;    
 }
 
+/* Medium heading styles */
 .heading-two{
     text-align: center;
     font-size: 25px;
@@ -156,6 +181,7 @@ a{
     font-weight: 500;
 }
 
+/* Small heading styles */
 .heading-three{
     margin-top: 40px;
     text-align: center;
@@ -164,10 +190,12 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Setting margin top for membership from container */
 .form-container{
     margin-top: 40px;
 }
 
+/* Style for membership form */
 .membership-form{
     display: flex;
     justify-content: center;
@@ -175,6 +203,7 @@ a{
     position: relative;
 }
 
+/* Email input filed style */
 .input-field input{
     padding: 20px;
     width: 450px;
@@ -182,6 +211,7 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Get startede button styles */
 .membership-button input{
     padding: 15px;
     width: 200px;
@@ -193,7 +223,7 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
-
+/* Email input field placeholder style */
 .input-label{
     position: absolute;
     top:20px;
@@ -202,6 +232,7 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Floating eamil placeholder style */
 .input-field input:valid ~ .input-label,
 .input-field input[value=""] ~ .input-label,
 .input-field input:focus ~ .input-label
@@ -210,8 +241,9 @@ a{
     font-size: 12px;
 }
 
-/* media */
+/* Media queries for top section*/
 
+/* Media queries for top section at screen width 1024px and below*/
 @media screen and (max-width:1024px){
     .dark-overlay{
         height: 650px;
@@ -263,6 +295,7 @@ a{
     }
 }
 
+/* Media queries for top section at screen width 768px and below*/
 @media screen and (max-width:768px){
     .dark-overlay{
         height: 600px;
@@ -290,7 +323,7 @@ a{
     }
 }
 
-
+/* Media queries for top section at screen width 480px and below */
 @media screen and (max-width:480px){
     .dark-overlay{
         height: 600px;
@@ -346,6 +379,7 @@ a{
     
 }
 
+/* Media queries for top section at screen width 320px*/
 @media screen and (max-width:320px){
     .dark-overlay{
         height: 600px;
@@ -390,6 +424,7 @@ a{
     
 }
 
+/* Media queries for top section at screen width 319px and below*/
 @media screen and (max-width:319px){
     .dark-overlay{
         height: 600px;
@@ -427,23 +462,29 @@ a{
     }
     
 }
+/* Top section  styling end */
 
-/* fancy section */
 
+/* Infomatroy section  start*/
+
+/* Section bottom border style */
 .fancy-border{
     border-bottom: 10px solid #222;
 }
 
+/* Second and third section container */
 .fancy-section{
     display: flex;
     background-color: black;
     font-family: 'Roboto',sans-serif;
 }
 
+/* Setting reverse flex direction for third and fifth section */
 .fancy-reverse{
     flex-direction: row-reverse;
 }
 
+/* Styling section content */
 .section-content{
     width: 50%;
     color: white;
@@ -451,33 +492,39 @@ a{
     justify-content: center;
 }
 
+/* Section text alignment */
 .section-text-content{
     align-self: center;
 }
 
+/* Section heading text style */
 .text-heading{
-    font-size: 50px;
+    font-size: 45px;
     margin: 10px 0;
     font-weight: bolder;
     padding: 0 50px;
 }
 
+/* Section sub-heading text style */
 .text-sub-heading{
-    font-size: 20px;
+    font-size: 25px;
     padding: 0 50px;    
 }
 
+/* Section image wrapper style */
 .section-img-wrapper{
     width: 50%;
     position: relative;
 }
 
-/* Card */
+/* Card Start */
 
+/* Setting flex property to a container */
 .flex{
     display: flex;
 }
 
+/* Stranger things card container */
 .st-container{
     position: absolute;
     top: 200px;
@@ -492,46 +539,55 @@ a{
     justify-content: space-around;
 }
 
+/* Stranger things image card container styles */
 .st-img-container .img-block{
     height: 100%
 }
 
+/* Stranger things card image styles */
 .st-img-container img{
     height: inherit;
     margin-right: 10px;
 }
 
+/* Stranger things card heading styles */
 .st-section-heading{
     font-weight: 500;
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Stranger things text styles */
 .st-section-text{
     font-weight: 400;
     color: skyblue;
     font-family: 'Roboto', sans-serif;
 }
 
+/* Style for aligning an element vertically align */
 .valign{
     align-self: center;
 }
 
+/* Stranger things card gif height  */
 .st-gif-container img{
     height: 50px;
 }
 
-/* End card */
+/* End card of stranger things card styles */
 
+/* Section image wrapper styles */
 .section-img-wrapper{
     display: flex;justify-content: center;
     margin: 50px 0;
 }
 
+/* Positioning section image contents */
 .section-img-content{
     position: relative;
 }
 
+/* Stlyles for section media container */
 .media-container{
     width: 400px;
     height: 300px;
@@ -539,25 +595,32 @@ a{
     position: relative;
 }
 
+/* Setting padding for video container */
 .video-container{
     padding: 15.5% 14% 0% 13%;
 }
 
+/* Setting padding for I max video container */
 .device-pile{
     padding: 7% 18% 15% 18%;
 }
 
+/* Styling dimensions for video container's video tag  */
 .video-container video{
     width: 100%;
     height: 100%;
 }
 
+/* Styles for section image tag */
 .img-container img{
     width: 100%;
     position: absolute;
     top: 0;
 }
 
+/* Media queries for section container  */
+
+/* Media queries for section container at 768px and below  */
 @media screen and (max-width:768px) {
     .fancy-section{
         flex-direction: column;
@@ -575,7 +638,6 @@ a{
         width: 100%;
     }
     
-
     .media-container{
         width: 100%;
         height: 100%px;
@@ -596,16 +658,15 @@ a{
         margin-top: 10px;
         padding: 0 20px;
     }
-    
 }
 
+/* Media queries for section container at 420px and below  */
 @media screen and (max-width:420px) {
     .text-heading{
         text-align: center;
         font-size: 32px;
         padding: 0 10px;
     }
-    
     .text-sub-heading{
         text-align: center;
         font-size: 16px;
@@ -618,6 +679,7 @@ a{
 
 }
 
+/* Media queries for section container at 320px and below  */
 @media screen and (max-width:320px) {
     .text-heading{
         text-align: center;
@@ -630,27 +692,32 @@ a{
     }
 
 }
+/* Infomatroy section styles end */
 
 
-/* faq styles */
+/* FAQ section styles start */
 
+/* Setting padding and margin bottom for faq section */
 .faq-section-border{
     border-bottom: 10px solid #222;
     padding-bottom: 60px;
 }
 
+/* Faq section wrapper styles */
 .faq-section-wrapper{
     display: flex;
     justify-content: center;
     color: var(--white);
 }
 
+/* Accordion wrapper styling */
 .accordian-wrapper{
     display: flex;
     justify-content: center;
     margin: 10px;
 }
 
+/* FAQ blocks heading style */
 .faq-heading{
     margin-top: 25px;
     font-size: 50px;
@@ -659,17 +726,20 @@ a{
     padding: 40px;
 }
 
+/* Accordion container style */
 .accordian-container{
     color: var(--white);
     font-family: 'Roboto', sans-serif;
     width: 800px;
 }
 
+/* Accordion  bg color and padding styles */
 .color-code{
     background-color: #303030;
     padding: 20px;
 }
 
+/* Accordion header styles */
 .accordian-head{
     display: flex;
     font-size: 30px;
@@ -680,6 +750,7 @@ a{
     background-color: #303030;
 }
 
+/* Accordion head button styles */
 .accordian-head button{
     text-align: left;
     padding: 20px;
@@ -689,47 +760,58 @@ a{
     color:var(--white);
 }
 
+/* Accordion icon container style */
 .accordin-icon-container{
     display: flex;
     justify-content: center;
 }
 
+/* Accordion icon style */
 .accordian-icon{
     align-self: center;
     padding: 0 30px;
 }
 
+/* Accordion body container style */
 .accordian-body{
     visibility: collapse;
     display: none;
     font-size: 25px;
 }
 
+/* Setting padding for accordion content */
 .accordian-content{
     padding: 10px 0;
 }
 
+/* Focus-within state change behaviour styles for accordion  */
 .accordian-head:focus-within ~ .accordian-body{
     visibility: visible;
     display: block;
 }
 
+/* Roating plus icon 45deg style on accodion state change style  */
 .accordian-head button:focus-within ~ .accordin-icon-container .accordian-icon{
     transform: rotate(45deg);
 }
 
+/* Media queries for FAQ section */
+
+/* Media queries for FAQ section at 1024px and below */
 @media screen and (max-width:1024px){
     .faq-heading{
         font-size: 40px;
     }
 }
 
+/* Media queries for FAQ section at 768px and below */
 @media screen and (max-width:768px){
     .faq-heading{
         font-size: 30px;
     }
 }
 
+/* Media queries for FAQ section at 420px and below */
 @media screen and (max-width:420px){
     .faq-heading{
         font-size: 30px;
@@ -744,6 +826,7 @@ a{
     }
 }
 
+/* Media queries for FAQ section at 320px and below */
 @media screen and (max-width:320px){
     .faq-heading{
         font-size: 18px;
@@ -754,16 +837,16 @@ a{
     }
 }
 
+/* FAQ section membership form  styles*/
 
-
-/* membership form */
-
+/* Membership form container style*/
 .faq-membership-container{
     display: flex;
     justify-content: center;
     padding: 50px 0 20px 0;
 }
 
+/* Membership form heading */
 .faq-membership-heading{
     color: var(--white);
     font-family: 'Roboto', sans-serif;
@@ -772,15 +855,18 @@ a{
     text-align: center;
 }
 
+/* Form container style */
 .faq-form-control{
     display: flex;
     justify-content: center;
 }
 
+/* Positioning membership form input field container */
 .faq-membership-input{
     position: relative;
 }
 
+/* Placehoder for email input field */
 .faq-label{
     font-family: 'Roboto', sans-serif;
     position: absolute;
@@ -790,6 +876,7 @@ a{
     color: gray;
 }
 
+/* Email input field style */
 .faq-membership-input input{
     padding: 17px;
     border: none;
@@ -797,11 +884,13 @@ a{
     width: 400px;
 }
 
+/* Floating placeholder style */
 .faq-membership-input input:valid ~ .faq-label,
 .faq-membership-input input:focus ~ .faq-label{
     top: 2px;
 }
 
+/* FAQ section get started button style */
 .faq-membership-button button{
     padding: 15px;
     border: none;
@@ -811,6 +900,9 @@ a{
     width: 200px;
 }
 
+/* Media queries of faq membership form */
+
+/* Media queries of faq membership form at 768px and below*/
 @media screen and (max-width:768px) {
     .faq-form-control{
         flex-direction: column;
@@ -832,18 +924,22 @@ a{
     }
     
 }
+/* FAQ section styling end */
 
 
-/* footer */
+/* Footer section styling start */
 
+/* Defining a class for gray color */
 .gray-color-text{
     color: gray;
 }
 
+/* Defining a class for white color */
 .white-color-text{
     color: white;
 }
 
+/* Footer container style */
 .footer{
     padding: 0.5% 12%;
     background-color: rgba(0,0,0,0.8);
@@ -851,10 +947,12 @@ a{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Question all text style */
 .footer .question-on-call{
     margin-top: 10px;
 }
 
+/* Footer links container style */
 .footer .footer-links{
     display: flex;
     justify-content: flex-start;
@@ -862,24 +960,29 @@ a{
     margin-top: 30px;
 }
 
+/* Footer link items style  */
 .footer .footer-link-items{
     margin: 5px 0;
     width: 220px; 
 }
 
+/* Footer links items link style */
 .footer .footer-link-items a{
     color: gray;
     font-size: 13px;
 }
 
+/* On hover state behaviour of footer link items link */
 .footer .footer-link-items a:hover{
     text-decoration: underline;
 }
 
+/* Footer section language selector wrapper style */
 .footer .lang-selector-wrapper{
     margin: 30px 0 30px 0;
 }
 
+/* Footer section language selector select element style */
 .footer .lang-selector-footer select{
     -webkit-appearance: none;
     padding: 15px 30px;
@@ -891,20 +994,24 @@ a{
     color: gray;
 }
 
+/* On focus state change behaviour style on footer section language selector select element */
 .footer .lang-selector-footer select:focus{
     border: 1px solid var(--white);
 }
 
+/* Netflix branding text styles */
 .footer .netflix-india-text{
     font-size: 14px;
     color: gray;
     margin-bottom: 25px;
 }
 
+/* Positioning language selector container */
 .lang-selector-footer{
     position: relative;
 }
 
+/* Language selector, language icons styles */
 .footer-language-icon{
     color: gray;
     position: absolute;
@@ -912,6 +1019,7 @@ a{
     left: 5px;
 }
 
+/* Language selector, arrow icons styles */
 .footer-arrow-icon{
     color: gray;
     position: absolute;
@@ -919,6 +1027,9 @@ a{
     left: 85px;
 }
 
+/* Media queries for footer section */
+
+/* Media queries for footer section at 768px and below*/
 @media screen and (max-width:768px) {
     .img-container img{
         top: -10px;
@@ -933,6 +1044,7 @@ a{
     }
 }
 
+/* Media queries for footer section at 500px and below*/
 @media screen and (max-width:500px){
     .footer{
         padding: 10px;
@@ -946,9 +1058,11 @@ a{
     }
 }
 
+/* Media queries for footer section at 360px and below*/
 @media screen and (max-width:360px){
     .footer .footer-link-items{
         margin: 5px 0;
         width: 120px; 
     }
 }
+/* Footer section styles end */

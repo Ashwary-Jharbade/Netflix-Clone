@@ -1,5 +1,7 @@
+/* importing Roboto fonts of weight 300,400,500,700 and 900 from google font api */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
+/* Global styling */
 :root{
     --blood-red:#e50914;
     --white:#ffffff;
@@ -11,6 +13,7 @@
     outline: none;
 }
 
+/* Material Icons styling */
 .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -36,11 +39,13 @@
     font-feature-settings: 'liga';
 }
 
+/* Styling document body */
 body{
     padding: 0;
     margin: 0;
 }
 
+/* Styles for backgroud color and background image */
 .body-bg{
     background-color: var(--black);
     background-image: url('../img/background-img.jpg');
@@ -49,27 +54,32 @@ body{
     background-repeat: no-repeat;
 }
 
+/* Removing text decoration from all the acnhors tag */
 a{
     text-decoration: none;
 }
 
+/* Styles for having certain disance from the bezels, aligning all elements to center and applying some padding */
 .section-wrapper{
     max-width: 1500px;
     margin: auto;
     padding:0 50px;
 }
 
+/* Dark fading overlay styles */
 .dark-overlay{
     background-color: rgba(0,0,0,0.5);
     width: 100%;
     height: 100%;
 }
 
+/* Applying flex property to the div and giving some top-bottom padding */
 .header-container{
     display: flex;
     padding: 25px 0;
 }
 
+/* Logo styling */
 .svg-container svg{
     width: 150px;
     cursor: pointer;
@@ -77,30 +87,33 @@ a{
 
 
 /* Sign in Box */
-
 .signin-box-wrapper{
     padding: 10px;
     display: flex;
     justify-content: center;
 }
 
+/* Sign in text styling */
 .heading{
     color: var(--white);
     font-weight: 700;
     font-size: 30px;
 }
 
+/* Sign in container styling */
 .signin-box{
     background-color: rgba(0,0,0,0.7); 
     padding: 60px 70px;
     width: 330px;
 }
 
+/* Form container styling */
 .form-container{
     margin-top: 30px;
     position: relative;
 }
 
+/* Style for email and password input fields */
 .form-control input{
     width: 100%;
     border-radius: 5px;
@@ -114,6 +127,7 @@ a{
     box-sizing: border-box;
 }
 
+/* Sign in button styles */
 .form-control button{
     width: 100%;
     height: 50px;
@@ -128,6 +142,7 @@ a{
     margin-top: 25px;
 }
 
+/* Styles for email placeholder */
 .email-input-label{
     position: absolute;
     color: gray;
@@ -136,6 +151,7 @@ a{
     font-size: 20px;
 }
 
+/* Styles for password placeholder */
 .password-input-label{
     position: absolute;
     color: gray;
@@ -144,22 +160,26 @@ a{
     font-size: 20px;
 }
 
+/* Input fields focus state styles  */
 .form-control input:focus{
     border-bottom: 2px solid orange;
 }
 
+/* Floating email placeholder styles */
 .form-control input:focus ~ .email-input-label,
 .form-control input:valid ~ .email-input-label{
     top: 5px;
     font-size: 12px;
 }   
 
+/* Floating password placeholder styles */
 .form-control input:focus ~ .password-input-label,
 .form-control input:valid ~ .password-input-label{
     top: 80px;
     font-size: 12px;
 }  
 
+/* Chekbox container styles */
 .additional-controls{
     display: flex;
     font-size: 14px;
@@ -168,27 +188,32 @@ a{
     justify-content: space-between;
 }
 
+/* Checkbox styling */
 .additional-controls input[type="checkbox"]{
     background-color: gray;
     padding: 0;
     margin: 0;
 }
 
+/* Checkbox checked state styling */
 .additional-controls input[type="checkbox"]:checked{
     background-color: gray;
 }
 
+/* Facebook icons parent container styling */
 .login-facebook{
     color: gray;
     margin-top: 20px;
 }
 
+/* Login wit facebook text styling */
 .facebook-text{
     font-size: 14px;
     padding-left: 5px;
     margin-top: -5px;
 }
 
+/* Faacebook icon styling */
 .fa-facebook-f{
     color: white;
     background-color:#4267B2;
@@ -196,42 +221,51 @@ a{
     padding: 5px 2px 0 8px;
 }
 
+/* Setting marign top for 'New to netflix' text contianer */
 .new-user{
     margin-top: 15px;
 }
 
+/* Generic class which applies gray color to text */
 .gray-color-text{
     color: gray;
 }
 
+/* Generic class which applies white color to text */
 .white-color-text{
     color: white;
 }
 
+/* Text including 'Google captcha' text styling */
 .page-policy{
     margin-top: 15px;
     font-size: 14px;
     margin-bottom: 50px;
 }
 
+/* Text including 'Google captcha' text, anchor styling   */
 .page-policy a{
     color: #0071eb;
 }
 
+/* Text including 'Google captcha' text, hover state styling */
 .page-policy a:hover{
     text-decoration: underline;
 }
 
+/* Page footer styling */
 .footer{
     padding: 10px 160px;
     background-color: rgba(0,0,0,0.8);
     margin-top:100px;
 }
 
+/* 'Question on call text styling' */
 .question-on-call{
     margin-top: 20px;
 }
 
+/* Footer links parent container styling */
 .footer-links{
     display: flex;
     justify-content: flex-start;
@@ -239,25 +273,29 @@ a{
     margin-top: 30px;
 }
 
+/* Footer link item container dimensions  */
 .footer-link-items{
     margin: 5px 0;
     width: 230px; 
 }
 
+/* Footer link anchor tag style */
 .footer-link-items a{
     color: gray;
     font-size: 15px;
 }
 
+/* Footer link anchor tag, hove state style */
 .footer-link-items a:hover{
     text-decoration: underline;
 }
 
-
+/* Language selector drowpdown marign */
 .lang-selector-wrapper{
     margin: 30px 0 30px 0;
 }
 
+/* Language selector drowpdown, select tag styles */
 .lang-selector select{
     -webkit-appearance: none;
     padding: 15px 30px;
@@ -269,14 +307,17 @@ a{
     color: gray;
 }
 
+/* Language selector drowpdown, select tag, focus state style */
 .lang-selector select:focus{
     border: 1px solid var(--white);
 }
 
+/* Positioning language selector */
 .lang-selector{
     position: relative;
 }
 
+/* Language selector icons stlyes */
 .footer-language-icon{
     color: gray;
     position: absolute;
@@ -284,6 +325,7 @@ a{
     left: 5px;
 }
 
+/* Footer arrow down icons style */
 .footer-arrow-icon{
     color: gray;
     position: absolute;
@@ -291,29 +333,40 @@ a{
     left: 85px;
 }
 
+/* Media queries for responsive page design */
+
+/* Media query at document width 500px */
 @media screen and (max-width:500px){
+
+    /* Sign in box small screen styles */
     .signin-box{
         width: 100%;
         padding: 0;
     }
 
+    /* Sign in box parent small screen styles */
     .signin-box-wrapper{
         display: flex;
         justify-content: center;
     }
 
+    /* Applying no spaces from bezels */
     .section-wrapper{
         padding: 0;
     }
+
+    /* Applying dark background*/
     .dark-overlay{
         background-color: rgba(0,0,0,1);
     }
 
+    /* Adjusting the logo in small screen view  */
     .svg-container svg{
         width: 130px;
         padding:0 10px;
     }
 
+    /* Footer stlyles in small screen background */
     .footer{
         padding: 10px;
         background-color: rgba(0,0,0,0.8);
@@ -321,13 +374,16 @@ a{
         border-top: 1px solid silver;
     }
 
+    /* Ajusting the dimesions of the footer link items */
     .footer-link-items{
         margin: 5px 0;
         width: 170px; 
     }
 }
-
+/* Media query at document width 320px */
 @media screen and (max-width:320px){
+
+    /* Ajusting the dimesions of the footer link items */
     .footer-link-items{
         margin: 5px 0;
         width: 150px; 
