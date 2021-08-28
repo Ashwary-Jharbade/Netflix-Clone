@@ -32,7 +32,7 @@ The project is an attempt to clone the existing (Aug 2021) Netflix website. And 
 - Go to the downloaded folder/directory.
 - Now open the folder named "Netflix-Clone" using text editor and start playing with the project code.
 
-##### Steps run the project it in your own local machine/computer.
+##### Steps to run the project it in your own local machine/computer.
 - Go to the downloaded folder/directory and enter inside Netflix fiolder.
 - `Double click` on the `index.html` file or use `mouse right click` and select `open with` option and select the browser which seem comfortable to you.
 
