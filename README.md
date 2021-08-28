@@ -46,7 +46,7 @@ The project is an attempt to clone the existing (Aug 2021) Netflix website. And 
 - Now desing the layout or flow diagram of the respective page.
 - Collect necessary assets which would be necessary to build the project.
 - Start coding the layout, you have desinged.
-- Try to document you code so that other you could understand when you need to make changes
+- Try to document you code so that you could understand when you need to make changes
 - Host your project on open source platoforms or paid platforms to make it live.
 - Always showcase you work, seek feedback and update you code.
 
