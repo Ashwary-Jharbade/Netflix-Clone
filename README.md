@@ -5,9 +5,9 @@ Cloning Netflix website home and sign in page
 
 ### Live Snapshot
 
-Uploading 2021-08-29 20-58-17 (online-video-cutter.com).mp4…
+![Uploading ezgif.com-gif-maker.gif…]()
 
-Uploading 2021-08-29 21-00-27 (online-video-cutter.com).mp4…
+![Uploading ezgif.com-gif-maker (1).gif…]()
 
 ### Project Snapshots
 
