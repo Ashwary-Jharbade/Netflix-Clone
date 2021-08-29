@@ -3,6 +3,12 @@ Cloning Netflix website home and sign in page
 
 ### [Click to see - Netflix page demo](https://ashwary-jharbade.github.io/Netflix-Clone/)
 
+### Live Snapshot
+
+Uploading 2021-08-29 20-58-17 (online-video-cutter.com).mp4…
+
+Uploading 2021-08-29 21-00-27 (online-video-cutter.com).mp4…
+
 ### Project Snapshots
 
 ![Screenshot (1189)](https://user-images.githubusercontent.com/55127977/130204031-bdd97afc-6c78-4734-951d-c9ed01e8b1d7.png)
