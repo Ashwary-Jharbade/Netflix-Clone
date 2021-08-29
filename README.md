@@ -5,6 +5,10 @@ Cloning Netflix website home and sign in page
 
 ### Live Snapshot
 
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/55127977/131257356-10a34ab6-44a4-4f9c-b4d8-e36b46f71d5c.gif)
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/55127977/131257361-542c69fd-dbc6-4dfa-95a8-57025c658e1c.gif)
+
 ### Project Snapshots
 
 ![Screenshot (1189)](https://user-images.githubusercontent.com/55127977/130204031-bdd97afc-6c78-4734-951d-c9ed01e8b1d7.png)
