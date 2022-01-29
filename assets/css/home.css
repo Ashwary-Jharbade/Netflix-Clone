@@ -1042,6 +1042,10 @@ a{
     .section-text-content{
         margin: 10px 0;
     }
+    
+    .imac-video-container {
+        padding-top: 3%;
+    }
 }
 
 /* Media queries for footer section at 500px and below*/
